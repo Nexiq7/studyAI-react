@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
+const API_BASE =
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:3001'
+    : 'https://studyai-express.onrender.com';
+
 type Flashcard = {
   front: string;
   back: string;
@@ -49,7 +54,7 @@ function App() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:3001/api/analyze', {
+      const response = await fetch(`${API_BASE}/api/analyze`, {
         method: 'POST',
         body: formData,
       });
@@ -99,7 +104,7 @@ function App() {
     setChatLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3001/api/chat', {
+      const response = await fetch(`${API_BASE}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: text }),
