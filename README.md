@@ -1,6 +1,3 @@
-# StudyAI Frontend (React.JS)
-
-```markdown
 # StudyAI Frontend (React + TypeScript + TailwindCSS)
 
 This is the frontend for StudyAI — a user-friendly interface to upload study notes, view summaries, flashcards, quizzes, and chat with an AI tutor.
