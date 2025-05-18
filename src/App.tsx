@@ -143,7 +143,7 @@ function App() {
 
           <input
             type="file"
-            accept=".txt"
+            accept=".txt, .pdf"
             onChange={handleFileChange}
             className="mb-4 w-full text-sm text-gray-500
               file:mr-4 file:py-2 file:px-4
@@ -171,7 +171,7 @@ function App() {
           )}
 
           <p className="mt-6 text-xs text-gray-400 italic">
-            Only .txt files supported for now.
+            Only .txt and .pdf files supported for now.
           </p>
         </div>
       </div>
@@ -229,7 +229,6 @@ function App() {
 
         {/* Suggested questions */}
         <div className="mb-4">
-          <p className="font-semibold mb-1">Suggested questions:</p>
           <div className="flex flex-wrap gap-2">
             {data.suggestedQuestions?.map((q, i) => (
               <button
