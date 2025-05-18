@@ -6,7 +6,7 @@ This is the frontend for StudyAI — a user-friendly interface to upload study n
 
 ## Features
 
-- Upload `.txt` study notes and analyze with AI.
+- Upload `.txt` or `.pdf` study notes and analyze with AI.
 - View generated summary, flashcards, and quizzes.
 - Reveal answers for quiz questions.
 - Chat with AI based on analyzed notes for personalized help.
